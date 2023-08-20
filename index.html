@@ -9,6 +9,7 @@
   <style>
 body {
 	background-color: #2f3434;
+    cursor: default;
 }
 
 @keyframes gradient {
@@ -146,6 +147,20 @@ body {
  z-index: 0;
 }
 
+#Stages{
+    position: relative;
+    top: -5%;
+}
+
+#Projet{
+    position: relative;
+    top: -24%;
+}
+
+#Skills{
+    position: relative;
+    top: -30%;
+}
 
 .pointer {
     cursor: pointer;
@@ -173,7 +188,7 @@ body {
 }
 
 .click {
-  position: relative;
+  position: relative
 }
 
 .button {
@@ -350,18 +365,18 @@ body {
         
             </div>
         </div>
-        <div id="sign_right" class="div_info">
-            <div id="Presentation" class="pointer" style="position: relative; top:0%">
-                <h1 class="click"> Jean Fruleux</h1>
+        <div id="sign_right" class="div_info" style="display: grid;">
+            <div id="Presentation" class="pointer">
+                <h1 class="click" style="position: relative; top: 3%;"> Jean Fruleux</h1>
                 <p> Etudiant en première année d'ingénieur à l'Institut Mines Télécom Nord Europe, je suis actuellement à la recherche d'un stage d'initiation technique dans la cybersécurité d'une durée de 8 à 12 semaines à compter du 30/05/2023</p>
             </div>
             <div id="Parcours scolaire">
                 <h2>Parcours scolaire :</h2>
                 <ul><li>2021-2023 Classe préparatoire à l'école IMT Nord Europe</li><li>2018-2021 Baccalauréat scientifique, mention bien, Saint-Odile </li></ul>
             </div>
-            <div id="Experience" class="pointer" style="position: relative; top:0%">
+            <div id="Experience" class="pointer">
                 <h2 class="click">Expériences profesionnelles :</h2>
-                <div id="Stages" style="position: relative; top:-5%">
+                <div id="Stages">
                     <p>Stages :</p>
                     <div id="Jet Fighter">
                         <h4>Mai 2023 à août 2023</br>
@@ -375,11 +390,11 @@ body {
                     </div>
                 </div>
             </div>
-            <div id="Projet" style="position: relative; top:-2%">
+            <div id="Projet">
                 <h2>Projets :</h2>
                 <ul><li>Conception de la partie graphique d'un grapheur sous OpenGL, l'objectif était de demander à l'utilisateur d'entrer une fonction mathématique dans la console puis de dessiner la courbe correspondante dans une fenêtre, durée 5 semaines. Responsable du projet : encadrement d'un groupe de 8 personnes divisé en 4 binômes</li><li>Conception de la programmation  de la télécommande sans fil d'une voiture connectée, durée 5 semaines, groupe de 6 personnes divisé en 3 binômes</li></ul>
             </div>
-            <div id="Skills" style="position: relative; top:-1%">
+            <div id="Skills">
                 <div id="HardSkills" class="pointer">
                     <h2 class="click">Hardskills :</h2>
                     <ul><li>Base en : C++, C#, Lua, Html,Css , Javascript</li> <li>Vu en cours : C, Python appliquée aux mathématiques, Arduino, PostgreSQL</li></ul>
