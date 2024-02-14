@@ -4,225 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
   <title>CV</title>
-
-
-  <style>
-body {
-	background-color: #2f3434;
-    cursor: default;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-#sign {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  display: flex;
-  width: 22cm;
-  background: #e7e7e7;
-  position: relative;
-  z-index: 1;
-}
-
-#sign_left {
-    background-color: #dc8b0b;
-    width: 5cm;
-    height: 80%;
-    position: relative;
-    top: 22px;
-}
-
-#sign_right {
-    width: 16cm;
-    position: relative;
-}
-
-.div_info {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.info_left {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#head_photo {
-    clip-path: ellipse(50% 50%);
-    margin: auto;
-}
-
-#position_logo {
-    margin-right: auto;
-    margin-left: auto;
-}
-
-#mail_logo {
-    margin-right: auto;
-    margin-left: auto;
-}
-
-#phone_logo {
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.display_margin {
-    margin: auto;
-}
-
-#sign_info_hardskills{
-    width: 22cm;
-    height: 30.7cm;
-    background-color: #e7e7e7;
-    z-index: 10;
-    position: absolute;
-}
-
-#profile_info{
-    width: 22cm;
-    height: 30.7cm;
-    background-color: #e7e7e7;
-    z-index: 10;
-    position: absolute;
-}
-
-#Experience_info{
-    width: 22cm;
-    height: 30.7cm;
-    background-color: #e7e7e7;
-    z-index: 10;
-    position: absolute;
-}
-
-#triangle-code{
- height : 0;
- width : 0;
- border-top : 26px solid #dc8b0b;
- border-right : 94.8px solid transparent;
- border-left : 94.8px solid transparent;
- position: absolute;
- top: 100%;
-}
-
-#triangle-code-bottom-right{
- display : block;
- height : 0;
- width : 0;
- border-bottom : 240px solid #34c9e7;
- border-left : 240px solid transparent;
- position: absolute;
- bottom: 0%;
- right: 0%;
- z-index: 0;
-}
-
-#triangle-code-bottom-left{
- display : block;
- height : 0;
- width : 0;
- border-bottom : 240px solid #34c9e7;
- border-right : 240px solid transparent;
- position: absolute;
- bottom: 0%;
- left: 0%;
- z-index: 0;
-}
-
-#triangle-code-top-right{
- display : block;
- height : 0;
- width : 0;
- border-top : 240px solid #34c9e7;
- border-left : 240px solid transparent;
- position: absolute;
- top: 0%;
- right: 0%;
- z-index: 0;
-}
-
-.pointer {
-    cursor: pointer;
-}
-
-.click::before {  
-  z-index: -1;
-  transform: scaleX(0);
-  transform-origin: bottom right;
-}
-
-.click:hover::before {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.click::before {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  inset: 0 0 0 0;
-  background: hsl(200 100% 80%);
-  transition: transform .3s ease;
-}
-
-.click {
-  position: relative
-}
-
-.button {
-  display: inline-block;
-  padding: 8px 13px;
-  font-size: 17px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #34c9e7;
-  border: none;
-  border-radius: 15px;
-}
-
-.button:hover {background-color: #34c9e7}
-
-.button:active {
-  background-color: #34c9e7;
-  transform: translateY(4px);
-}
-
-p {
-    font-family: fantasy;
-    font-size: 95%;
-}
-
-li{
-    font-family: fantasy;
-    font-size: 95%;
-}
-
-h4{
-    font-family: fantasy;
-    font-size: 95%;
-}
-
-br{
-    line-height: -50%;
-}
-
-  </style>
+  <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <div id="sign"> 
@@ -379,7 +161,7 @@ br{
         </div>
         <div id="sign_right" class="div_info">
             <div id="Presentation">
-                <h1 id="Presentation_name"class="click pointer"> Jean Fruleux</h1>
+                <h1 id="Presentation_name" class="click pointer"> Jean Fruleux</h1>
                 <p> Etudiant en première année d'ingénieur à l'Institut Mines Télécom Nord Europe, je suis actuellement à la recherche d'un stage dans le développement informatique ou la cybersécurité d'une durée de 12 à 16 semaines à compter du 20/05/2024</p>
             </div>
             <div id="Parcours scolaire">
@@ -387,7 +169,7 @@ br{
                 <ul><li>2021-2023 Classe préparatoire à l'école IMT Nord Europe</li><li>2018-2021 Baccalauréat scientifique, mention bien, Saint-Odile </li></ul>
             </div>
             <div id="Experience">
-                <h2 id="Experience_Tittle"class="click pointe">Expériences profesionnelles :</h2>
+                <h2 id="Experience_Tittle"class="click pointer">Expériences profesionnelles :</h2>
                 <div id="Stages">
                     <p>Stages :</p>
                     <div id="Jet Fighter">
@@ -409,7 +191,7 @@ br{
             </div>
             <div id="Skills">
                 <div id="HardSkills">
-                    <h2 id="HardSkills_Tittle" class="click pointe">Hardskills :</h2>
+                    <h2 id="HardSkills_Tittle" class="click pointer">Hardskills :</h2>
                     <ul><li>Stage - développement personnel : C#, Lua, Html, Css , Javascript</li> <li>Etudes IMT : C, Python, Arduino, PostgreSQL, Java</li></ul>
                 </div>
                 <div id="SoftSkills">
