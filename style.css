@@ -23,18 +23,74 @@ body {
   margin-bottom: auto;
   display: flex;
   width: 22cm;
-  background: #e7e7e7;
+  background: #ffffff;
   position: relative;
   z-index: 1;
+  height: 29.7cm;
 }
 
 #sign_left {
-    background-color: #dc8b0b;
+    background-color: #f6cb24;
     width: 5cm;
-    height: 80%;
+    height: 92%;
     position: relative;
     top: 22px;
 }
+
+#sign_left_background{
+    width: 6cm;
+    background: rgb(119, 70, 52);
+    background-image: url(http://www.transparenttextures.com/patterns/wood-pattern.png); /*trouver un moyen d'enlever la dépendance, sans doute en téléchargant l'image ou un truc du genre*/
+    margin-right: 1%;
+}
+
+#sign_left_support_top_rod{
+    position: relative;
+    display: block;
+    z-index: 1;
+    height: 1%;
+    top: 2.1%;
+    width: 91%;
+    margin-left: 5%;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 1px 2px 1.2px 1px #292929;
+}
+
+#sign_left_support_top_circle_right{
+    position: relative;
+    display: block;
+    z-index: 1;
+    height: 1.3%;
+    top: 2.4%;
+    width: 5.2%;
+    margin-left: 92%;
+    border-radius: 21px / 24px;
+    margin-top: -6.9%;
+}
+
+#sign_left_support_top_circle_left{
+    position: relative;
+    display: block;
+    z-index: 1;
+    height: 1.3%;
+    top: 2%;
+    width: 5.2%;
+    margin-left: 4.45%;
+    border-radius: 21px / 24px;
+    margin-top: -4.9%;
+}
+
+.degrade-horizontal-top-right {
+    background: linear-gradient(to top right, #643025, #a84d37);
+  }
+
+  .degrade-horizontal-top-right-circle {
+    background: linear-gradient(to top right, #828180, #f6f4f4);
+  }
+  
 
 #sign_right {
     width: 16cm;
@@ -78,7 +134,7 @@ body {
 #sign_info_hardskills{
     width: 22cm;
     height: 30.7cm;
-    background-color: #e7e7e7;
+    background-color: #ffffff;
     z-index: 10;
     position: absolute;
 }
@@ -86,7 +142,7 @@ body {
 #profile_info{
     width: 22cm;
     height: 30.7cm;
-    background-color: #e7e7e7;
+    background-color: #ffffff;
     z-index: 10;
     position: absolute;
 }
@@ -94,7 +150,7 @@ body {
 #Experience_info{
     width: 22cm;
     height: 30.7cm;
-    background-color: #e7e7e7;
+    background-color: #ffffff;
     z-index: 10;
     position: absolute;
 }
@@ -102,7 +158,7 @@ body {
 #triangle-code{
  height : 0;
  width : 0;
- border-top : 26px solid #dc8b0b;
+ border-top : 26px solid #f6cb24;
  border-right : 94.8px solid transparent;
  border-left : 94.8px solid transparent;
  position: absolute;
@@ -122,7 +178,7 @@ body {
 }
 
 #triangle-code-bottom-left{
- display : block;
+ display : none; /*le display est sur none puisqu'on a mis une banderolle par dessus mais on le garde si jamais on change d'avis*/
  height : 0;
  width : 0;
  border-bottom : 240px solid #34c9e7;
@@ -133,7 +189,7 @@ body {
  z-index: 0;
 }
 
-#triangle-code-top-right{
+#triangle-code-top-right{	
  display : block;
  height : 0;
  width : 0;
@@ -164,9 +220,11 @@ body {
   content: " ";
   display: block;
   position: absolute;
+  border-top-right-radius: 70%;
+  border-bottom-right-radius: 70%;
   top: 0; right: 0; bottom: 0; left: 0;
   inset: 0 0 0 0;
-  background: hsl(200 100% 80%);
+  background: #f9c32f;
   transition: transform .3s ease;
 }
 
